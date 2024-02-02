@@ -1,0 +1,6 @@
+<div [formGroup]="taskForm">
+    <p>Description: <input type="text" formControlName="description"></p>
+    <p>Due Date: <input type="date" formControlName="dueDate" /></p>
+    <p>Completed: <input type="checkbox" formControlName="isCompleted"></p>
+    <button (click)="onDeleteTask()">Delete Task</button>
+  </div>

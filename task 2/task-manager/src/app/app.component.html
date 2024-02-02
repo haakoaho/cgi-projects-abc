@@ -1,0 +1,6 @@
+<router-outlet>
+  <div *ngFor="let task of tasks; let i = index">
+    <app-task [task]="task" (deleteTask)="onDeleteTask(i)"></app-task>
+  </div>
+  <button (click) = "addTask()">Add new Task</button>
+</router-outlet>
